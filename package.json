@@ -1,0 +1,36 @@
+{
+  "name": "pgta",
+  "version": "1.0.0",
+  "description": "Telegram Mini App with AR and Maps integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "mapbox-gl": "^3.1.2",
+    "mind-ar": "^1.2.2",
+    "three": "^0.161.0",
+    "@twa-dev/sdk": "^6.9.1",
+    "axios": "^1.6.7",
+    "pg": "^8.11.3",
+    "typeorm": "^0.3.20",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@types/node": "^20.11.16",
+    "@types/three": "^0.161.2",
+    "@types/pg": "^8.11.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-node-polyfills": "^0.21.0"
+  }
+} 
