@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 // import { WebApp } from '@twa-dev/sdk';
 
 const HomePage = () => {
-  const [isReady, setIsReady] = useState(false);
+  // const [isReady, setIsReady] = useState(false);
 
   // useEffect(() => {
   //   // Initialize Telegram WebApp
