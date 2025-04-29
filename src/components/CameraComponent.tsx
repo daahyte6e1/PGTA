@@ -1,13 +1,14 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 function CameraComponent() {
   const videoRef = useRef(null);
   const [cameraOn, setCameraOn] = useState(false);
-
   const startCamera = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-      videoRef.current.srcObject = stream;
+      if (!videoRef.current) return
+
+      (videoRef.current as HTMLVideoElement).srcObject = stream;
       setCameraOn(true);
     } catch (err) {
       console.error('Ошибка доступа к камере:', err);
